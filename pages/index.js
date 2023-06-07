@@ -12,7 +12,7 @@ export default function Home() {
 
 	// ------- Functions -------
 	/**
-	 * Fetch images from the Unsplash API and append the results to your `images` array
+	 * Fetch images from the Unsplash API and append the results to `images` array
 	 */
 	const fetchImages = async () => {
 		const response = await fetch(`${BASE_URL}?query=tea&page=${page}`, {
@@ -21,7 +21,7 @@ export default function Home() {
 			},
 		})
 		const { results } = await response.json()
-    console.log(results)
+
 		setImages((prev) => [...prev, ...results])
 	}
 

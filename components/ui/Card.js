@@ -18,7 +18,7 @@ export default function Card({
 	const cardRef = useRef()
 
 	/**
-	 * Implement Intersection Observer to check if the last Card in the array is visible on the screen, then set a new limit
+	 * Intersection Observer to check if the last Card in the array is visible on the screen, then set a new limit
 	 */
 	useEffect(() => {
 		if (!cardRef?.current) return
